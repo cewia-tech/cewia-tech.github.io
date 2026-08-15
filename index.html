@@ -2,19 +2,23 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>CEWIA Tech — Soluções digitais inteligentes</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>CEWIA Tech — Inteligência para transformar ideias em soluções</title>
 
   <meta
     name="description"
-    content="A CEWIA Tech transforma ideias em soluções digitais inteligentes, úteis e bem construídas."
+    content="A CEWIA Tech transforma ideias em soluções digitais simples, úteis e bem construídas."
   >
 
   <style>
     :root {
       --navy: #10243e;
-      --blue: #1e3a8a;
+      --deep-blue: #1e3a8a;
       --teal: #0ea5a4;
       --green: #22c55e;
       --lime: #a3e635;
@@ -37,12 +41,19 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 88px;
     }
 
     body {
       font-family:
-        Inter, ui-sans-serif, system-ui, -apple-system,
-        BlinkMacSystemFont, "Segoe UI", sans-serif;
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
       color: var(--text);
       background: var(--white);
       line-height: 1.6;
@@ -53,6 +64,11 @@
       text-decoration: none;
     }
 
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
     .container {
       width: min(calc(100% - 40px), var(--max-width));
       margin: 0 auto;
@@ -61,96 +77,84 @@
     header {
       position: sticky;
       top: 0;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.92);
+      z-index: 20;
+
+      background: rgba(255, 255, 255, 0.94);
       backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(220, 227, 232, 0.75);
+
+      border-bottom: 1px solid rgba(220, 227, 232, 0.8);
     }
 
     nav {
-      min-height: 72px;
+      min-height: 84px;
+
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
+
+      gap: 28px;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-size: 20px;
-      font-weight: 800;
-      color: var(--navy);
-      letter-spacing: -0.03em;
-    }
-
-    .brand-mark {
-      display: grid;
-      grid-template-columns: repeat(4, 7px);
-      gap: 3px;
-      align-items: end;
-      height: 28px;
-    }
-
-    .brand-mark span {
-      display: block;
-      width: 7px;
-      border-radius: 999px;
-    }
-
-    .brand-mark span:nth-child(1) {
-      height: 11px;
-      background: var(--blue);
-    }
-
-    .brand-mark span:nth-child(2) {
-      height: 16px;
-      background: var(--teal);
-    }
-
-    .brand-mark span:nth-child(3) {
-      height: 21px;
-      background: var(--green);
-    }
-
-    .brand-mark span:nth-child(4) {
-      height: 27px;
-      background: var(--lime);
+    .brand-logo {
+      width: 190px;
+      height: auto;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
       gap: 28px;
+
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 650;
       color: var(--text-secondary);
+    }
+
+    .nav-links a {
+      transition: color 160ms ease;
     }
 
     .nav-links a:hover {
       color: var(--navy);
     }
 
+    .nav-contact {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 0 18px;
+
+      border-radius: 12px;
+      color: var(--white);
+      background: var(--navy);
+    }
+
     .hero {
       position: relative;
       overflow: hidden;
-      padding: 120px 0 104px;
+
+      padding: 124px 0 112px;
     }
 
     .hero::before {
       content: "";
+
       position: absolute;
-      width: 520px;
-      height: 520px;
+      width: 540px;
+      height: 540px;
+
       right: -190px;
       top: -220px;
+
       border-radius: 50%;
+
       background:
         radial-gradient(
           circle,
           rgba(14, 165, 164, 0.17),
-          rgba(163, 230, 53, 0.06) 48%,
+          rgba(163, 230, 53, 0.07) 48%,
           transparent 72%
         );
     }
@@ -159,70 +163,87 @@
       display: inline-flex;
       align-items: center;
       gap: 9px;
+
       margin-bottom: 24px;
       padding: 8px 13px;
+
       border: 1px solid var(--border);
       border-radius: 999px;
+
       background: var(--surface);
       color: var(--text-secondary);
+
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 750;
     }
 
     .eyebrow-dot {
       width: 8px;
       height: 8px;
+
       border-radius: 50%;
       background: var(--green);
     }
 
     h1 {
-      max-width: 850px;
+      max-width: 930px;
+
       color: var(--navy);
-      font-size: clamp(46px, 7vw, 84px);
-      line-height: 1.02;
+
+      font-size: clamp(46px, 7vw, 82px);
+      line-height: 1.03;
       letter-spacing: -0.055em;
     }
 
     .gradient-text {
-      background: linear-gradient(
-        90deg,
-        var(--blue),
-        var(--teal),
-        var(--green)
-      );
+      background:
+        linear-gradient(
+          90deg,
+          var(--deep-blue),
+          var(--teal),
+          var(--green)
+        );
+
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
     }
 
     .hero-text {
-      max-width: 700px;
+      max-width: 720px;
+
       margin-top: 30px;
-      font-size: clamp(18px, 2.3vw, 22px);
+
       color: var(--text-secondary);
+
+      font-size: clamp(18px, 2.2vw, 22px);
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
+
       margin-top: 38px;
     }
 
     .button {
       min-height: 52px;
+
       display: inline-flex;
       align-items: center;
       justify-content: center;
+
       padding: 0 24px;
+
       border-radius: 14px;
+
       font-size: 15px;
       font-weight: 750;
+
       transition:
         transform 160ms ease,
-        box-shadow 160ms ease,
-        background 160ms ease;
+        box-shadow 160ms ease;
     }
 
     .button:hover {
@@ -232,13 +253,16 @@
     .button-primary {
       color: var(--white);
       background: var(--navy);
-      box-shadow: 0 12px 28px rgba(16, 36, 62, 0.18);
+
+      box-shadow:
+        0 12px 28px rgba(16, 36, 62, 0.18);
     }
 
     .button-secondary {
       border: 1px solid var(--border);
-      background: var(--white);
+
       color: var(--navy);
+      background: var(--white);
     }
 
     section {
@@ -251,7 +275,9 @@
 
     .section-label {
       margin-bottom: 14px;
+
       color: var(--teal);
+
       font-size: 13px;
       font-weight: 800;
       letter-spacing: 0.12em;
@@ -259,16 +285,20 @@
     }
 
     h2 {
-      max-width: 760px;
+      max-width: 800px;
+
       color: var(--navy);
+
       font-size: clamp(34px, 5vw, 54px);
       line-height: 1.08;
       letter-spacing: -0.045em;
     }
 
     .section-intro {
-      max-width: 700px;
+      max-width: 720px;
+
       margin-top: 20px;
+
       color: var(--text-secondary);
       font-size: 18px;
     }
@@ -277,14 +307,18 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 22px;
+
       margin-top: 48px;
     }
 
     .card {
       padding: 32px;
+
       border: 1px solid var(--border);
       border-radius: var(--radius);
+
       background: var(--white);
+
       transition:
         transform 180ms ease,
         box-shadow 180ms ease,
@@ -293,29 +327,40 @@
 
     .card:hover {
       transform: translateY(-4px);
+
       border-color: #c6d0d8;
-      box-shadow: 0 18px 50px rgba(16, 36, 62, 0.08);
+
+      box-shadow:
+        0 18px 50px rgba(16, 36, 62, 0.08);
     }
 
     .card-icon {
       width: 48px;
       height: 48px;
+
       display: grid;
       place-items: center;
+
       margin-bottom: 24px;
+
       border-radius: 14px;
-      background: linear-gradient(
-        135deg,
-        rgba(30, 58, 138, 0.11),
-        rgba(14, 165, 164, 0.12)
-      );
-      color: var(--blue);
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(30, 58, 138, 0.11),
+          rgba(14, 165, 164, 0.12)
+        );
+
+      color: var(--deep-blue);
       font-size: 22px;
     }
 
     .card h3 {
       margin-bottom: 10px;
+
       color: var(--navy);
+
       font-size: 21px;
       letter-spacing: -0.025em;
     }
@@ -334,49 +379,29 @@
 
     .mission-panel {
       position: relative;
-      min-height: 380px;
+      min-height: 390px;
+
       overflow: hidden;
+
       border-radius: 28px;
       background: var(--navy);
     }
 
-    .mission-panel::before,
-    .mission-panel::after {
-      content: "";
+    .mission-symbol {
       position: absolute;
-      border-radius: 999px;
-    }
 
-    .mission-panel::before {
-      width: 330px;
-      height: 74px;
-      top: 76px;
-      left: -60px;
-      transform: rotate(-12deg);
-      background: linear-gradient(
-        90deg,
-        var(--blue),
-        var(--teal),
-        var(--green)
-      );
-    }
+      width: 72%;
+      max-width: 420px;
 
-    .mission-panel::after {
-      width: 390px;
-      height: 74px;
-      right: -88px;
-      bottom: 82px;
-      transform: rotate(-12deg);
-      background: linear-gradient(
-        90deg,
-        var(--teal),
-        var(--green),
-        var(--lime)
-      );
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
     }
 
     .mission-copy p {
       margin-top: 24px;
+
       color: var(--text-secondary);
       font-size: 19px;
     }
@@ -385,10 +410,15 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 32px;
+
       padding: 46px;
+
       border-radius: 28px;
+
       color: var(--white);
+
       background:
         linear-gradient(
           130deg,
@@ -405,37 +435,83 @@
 
     .contact-card p {
       max-width: 600px;
+
       margin-top: 12px;
+
       color: rgba(255, 255, 255, 0.76);
     }
 
     .contact-card .button {
       flex-shrink: 0;
-      background: var(--white);
+
       color: var(--navy);
+      background: var(--white);
     }
 
     footer {
-      padding: 34px 0;
+      padding: 48px 0 34px;
+
       border-top: 1px solid var(--border);
+
       color: var(--text-secondary);
       font-size: 14px;
     }
 
-    .footer-content {
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+    }
+
+    .footer-logo {
+      width: 170px;
+      margin-bottom: 18px;
+    }
+
+    .footer-slogan {
+      max-width: 430px;
+      font-size: 16px;
+    }
+
+    .footer-contact {
+      text-align: right;
+    }
+
+    .footer-contact strong {
+      display: block;
+      margin-bottom: 8px;
+
+      color: var(--navy);
+    }
+
+    .footer-bottom {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
       gap: 24px;
+
+      margin-top: 38px;
+      padding-top: 24px;
+
+      border-top: 1px solid var(--border);
     }
 
-    @media (max-width: 780px) {
+    @media (max-width: 820px) {
+      nav {
+        min-height: 74px;
+      }
+
+      .brand-logo {
+        width: 158px;
+      }
+
       .nav-links {
         display: none;
       }
 
       .hero {
-        padding: 90px 0 80px;
+        padding: 92px 0 80px;
       }
 
       section {
@@ -452,16 +528,26 @@
       }
 
       .mission-panel {
-        min-height: 290px;
+        min-height: 300px;
       }
 
       .contact-card {
         align-items: flex-start;
         flex-direction: column;
+
         padding: 34px 26px;
       }
 
-      .footer-content {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-contact {
+        text-align: left;
+      }
+
+      .footer-bottom {
         align-items: flex-start;
         flex-direction: column;
       }
@@ -484,21 +570,25 @@
 <body>
   <header>
     <nav class="container" aria-label="Navegação principal">
-      <a class="brand" href="#inicio" aria-label="CEWIA Tech — início">
-        <span class="brand-mark" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-
-        CEWIA Tech
+      <a href="#inicio" aria-label="CEWIA Tech — início">
+        <img
+          class="brand-logo"
+          src="CEWIA_Tech_logo_principal.png"
+          alt="CEWIA Tech"
+        >
       </a>
 
       <div class="nav-links">
-        <a href="#sobre">Sobre</a>
         <a href="#atuacao">O que fazemos</a>
+        <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
+
+        <a
+          class="nav-contact"
+          href="mailto:cewia.tech@gmail.com"
+        >
+          Entrar em contato
+        </a>
       </div>
     </nav>
   </header>
@@ -517,9 +607,9 @@
         </h1>
 
         <p class="hero-text">
-          Criamos produtos digitais simples, úteis e bem construídos,
-          combinando tecnologia, design e inteligência para resolver
-          problemas reais.
+          Desenvolvemos soluções digitais, aplicativos e produtos
+          inteligentes que transformam boas ideias em experiências
+          simples, úteis e preparadas para evoluir.
         </p>
 
         <div class="hero-actions">
@@ -554,7 +644,7 @@
           <article class="card">
             <div class="card-icon" aria-hidden="true">✦</div>
 
-            <h3>Produtos digitais</h3>
+            <h3>Soluções digitais</h3>
 
             <p>
               Transformamos oportunidades e ideias em produtos digitais
@@ -565,33 +655,33 @@
           <article class="card">
             <div class="card-icon" aria-hidden="true">⌁</div>
 
-            <h3>Aplicativos mobile</h3>
+            <h3>Aplicativos Mobile</h3>
 
             <p>
-              Construímos aplicativos Android modernos, intuitivos e
-              orientados à solução de necessidades reais.
+              Construímos aplicativos modernos, intuitivos e orientados
+              à solução de necessidades reais.
             </p>
           </article>
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">◎</div>
 
-            <h3>Inteligência artificial</h3>
+            <h3>Automação e IA</h3>
 
             <p>
-              Aplicamos inteligência artificial quando ela simplifica
-              tarefas, melhora decisões ou cria novas possibilidades.
+              Criamos soluções inteligentes para automatizar processos,
+              apoiar decisões e aumentar a produtividade.
             </p>
           </article>
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">↗</div>
 
-            <h3>Automação</h3>
+            <h3>Consultoria tecnológica</h3>
 
             <p>
-              Reduzimos trabalho repetitivo e conectamos processos por
-              meio de soluções simples, eficientes e sustentáveis.
+              Apoiamos a transformação de ideias em produtos digitais
+              viáveis, simples e preparados para crescer.
             </p>
           </article>
         </div>
@@ -600,25 +690,33 @@
 
     <section id="sobre">
       <div class="container mission">
-        <div class="mission-panel" aria-hidden="true"></div>
+        <div class="mission-panel">
+          <img
+            class="mission-symbol"
+            src="CEWIA_Tech_simbolo.png"
+            alt=""
+            aria-hidden="true"
+          >
+        </div>
 
         <div class="mission-copy">
-          <p class="section-label">Nossa missão</p>
+          <p class="section-label">Sobre a CEWIA</p>
 
           <h2>
-            Criar tecnologia útil, acessível e bem construída.
+            Boas ideias merecem produtos simples, úteis e acessíveis.
           </h2>
 
           <p>
-            A CEWIA nasce para transformar pequenas ideias em produtos
-            digitais relevantes. Trabalhamos com simplicidade,
-            consistência e atenção ao que realmente gera valor.
+            A CEWIA Tech nasceu para transformar boas ideias em
+            produtos digitais simples, úteis e acessíveis.
           </p>
 
           <p>
-            Automatizamos o que é repetitivo para dedicar mais energia
-            ao que exige criatividade, julgamento e entendimento das
-            pessoas.
+            Acreditamos que tecnologia deve resolver problemas reais,
+            sem complexidade desnecessária. Por isso desenvolvemos
+            aplicativos mobile, ferramentas inteligentes e soluções
+            digitais com foco em qualidade, baixo custo e evolução
+            contínua.
           </p>
         </div>
       </div>
@@ -631,8 +729,8 @@
             <h2>Vamos transformar uma ideia em solução?</h2>
 
             <p>
-              Entre em contato para conhecer a CEWIA e acompanhar os
-              próximos produtos.
+              Entre em contato para conhecer a CEWIA e acompanhar
+              nossos próximos produtos.
             </p>
           </div>
 
@@ -648,12 +746,36 @@
   </main>
 
   <footer>
-    <div class="container footer-content">
-      <strong>CEWIA Tech</strong>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img
+            class="footer-logo"
+            src="CEWIA_Tech_logo_principal.png"
+            alt="CEWIA Tech"
+          >
 
-      <span>
-        © <span id="year"></span> CEWIA Tech. Brasil.
-      </span>
+          <p class="footer-slogan">
+            Inteligência para transformar ideias em soluções.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <strong>Contato</strong>
+
+          <a href="mailto:cewia.tech@gmail.com">
+            cewia.tech@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © <span id="year"></span> CEWIA Tech.
+        </span>
+
+        <span>Brasil</span>
+      </div>
     </div>
   </footer>
 
