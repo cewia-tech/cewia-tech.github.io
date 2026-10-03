@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Encontre variações magnéticas próximas com referência local, gráfico e alertas opcionais.">
+  <title>Detector Magnético Fácil | CEWIA Tech</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header><img src="assets/cewia-symbol.png" alt=""><a href="https://cewia.com.br/">CEWIA Tech</a></header>
+  <main>
+    <nav aria-label="Language"><a href="?lang=pt" lang="pt-BR">Português</a><a href="?lang=en" lang="en">English</a><a href="?lang=es" lang="es">Español</a></nav>
+    <section data-lang="pt">
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Detector Magnético Fácil"><div><p class="eyebrow">Detector Magnético Fácil</p><h1>Encontre variações magnéticas próximas.</h1><p class="lead">Compare o campo atual com uma referência local e acompanhe alterações positivas e negativas com leitura, gráfico e alertas.</p><p class="status">Em preparação para teste fechado no Google Play.</p></div></div>
+      <article class="card"><ul><li>Referência magnética local automática</li><li>Variação em µT, campo total e maior pico</li><li>Gráfico das leituras recentes</li><li>Som progressivo e vibração opcionais</li><li>Três níveis de sensibilidade</li><li>Dados dos eixos X, Y e Z e precisão do sensor</li><li>Temas claro, escuro e automático</li><li>Português, inglês e espanhol</li></ul><p>Requer magnetômetro. A resposta depende do sensor e da construção do celular. O aplicativo indica alterações causadas principalmente por ímãs, ferro e aço próximos; não identifica o material ou a distância, não detecta riscos elétricos e não substitui equipamento profissional.</p></article>
+      <a class="button" href="privacy-pt.html">Política de privacidade</a>
+    </section>
+    <section data-lang="en" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Easy Magnetic Detector"><div><p class="eyebrow">Easy Magnetic Detector</p><h1>Find nearby magnetic variations.</h1><p class="lead">Compare the current field with a local reference and follow positive and negative changes with a reading, chart and alerts.</p><p class="status">Preparing for closed testing on Google Play.</p></div></div>
+      <article class="card"><ul><li>Automatic local magnetic reference</li><li>Change in µT, total field and highest peak</li><li>Chart of recent readings</li><li>Optional progressive sound and vibration</li><li>Three sensitivity levels</li><li>X, Y and Z axes and sensor accuracy</li><li>Light, dark and automatic themes</li><li>English, Portuguese and Spanish</li></ul><p>Requires a magnetometer. Response depends on the phone's sensor and construction. The app shows changes mainly caused by nearby magnets, iron and steel; it does not identify material or distance, detect electrical hazards, or replace professional equipment.</p></article>
+      <a class="button" href="privacy-en.html">Privacy policy</a>
+    </section>
+    <section data-lang="es" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Detector Magnético Fácil"><div><p class="eyebrow">Detector Magnético Fácil</p><h1>Encuentra variaciones magnéticas cercanas.</h1><p class="lead">Compara el campo actual con una referencia local y sigue cambios positivos y negativos con lectura, gráfico y alertas.</p><p class="status">En preparación para pruebas cerradas en Google Play.</p></div></div>
+      <article class="card"><ul><li>Referencia magnética local automática</li><li>Variación en µT, campo total y pico máximo</li><li>Gráfico de lecturas recientes</li><li>Sonido progresivo y vibración opcionales</li><li>Tres niveles de sensibilidad</li><li>Ejes X, Y y Z y precisión del sensor</li><li>Temas claro, oscuro y automático</li><li>Español, portugués e inglés</li></ul><p>Requiere magnetómetro. La respuesta depende del sensor y de la construcción del teléfono. La aplicación muestra cambios causados principalmente por imanes, hierro y acero cercanos; no identifica el material o la distancia, no detecta riesgos eléctricos ni sustituye equipos profesionales.</p></article>
+      <a class="button" href="privacy-es.html">Política de privacidad</a>
+    </section>
+    <script>const language=new URLSearchParams(location.search).get('lang');const code=['pt','en','es'].includes(language)?language:'pt';document.querySelectorAll('[data-lang]').forEach(s=>s.hidden=s.dataset.lang!==code);document.documentElement.lang=code==='pt'?'pt-BR':code;document.title=({pt:'Detector Magnético Fácil',en:'Easy Magnetic Detector',es:'Detector Magnético Fácil'})[code]+' | CEWIA Tech';document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')==='?lang='+code)a.setAttribute('aria-current','page')});</script>
+  </main>
+  <footer>CEWIA Tech · <a href="mailto:cewia.tech@gmail.com">cewia.tech@gmail.com</a></footer>
+</body>
+</html>
