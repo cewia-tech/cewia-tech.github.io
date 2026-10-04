@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Meça objetos pequenos com régua calibrável, paquímetro, área, diâmetro e tamanho real.">
+  <title>Régua Fácil | CEWIA Tech</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header><img src="assets/cewia-symbol.png" alt=""><a href="https://cewia.com.br/">CEWIA Tech</a></header>
+  <main>
+    <nav aria-label="Language"><a href="?lang=pt" lang="pt-BR">Português</a><a href="?lang=en" lang="en">English</a><a href="?lang=es" lang="es">Español</a></nav>
+    <section data-lang="pt">
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Régua Fácil"><div><p class="eyebrow">Régua Fácil</p><h1>Calibre uma vez. Meça com confiança.</h1><p class="lead">Meça pequenos objetos na tela com régua de borda, paquímetro, área, diâmetro e transferência de tamanho real.</p><p class="status">Em preparação para teste fechado no Google Play.</p></div></div>
+      <article class="card"><ul><li>Calibração por cartão padrão ou medida conhecida</li><li>Régua em qualquer borda da tela</li><li>Paquímetro de dois pontos com trava e ajuste fino</li><li>Largura, altura, área e diâmetro</li><li>Transferência de medidas para tamanho físico</li><li>Milímetros, centímetros e polegadas</li><li>Retrato, paisagem e compensação para capas</li><li>Português, inglês e espanhol</li></ul><p>A precisão depende da calibração, da tela e do posicionamento do objeto. A Régua Fácil é destinada a medições rápidas de objetos pequenos e não substitui instrumento certificado quando houver exigência técnica, comercial ou de segurança.</p></article>
+      <a class="button" href="privacy-pt.html">Política de privacidade</a>
+    </section>
+    <section data-lang="en" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Easy Ruler"><div><p class="eyebrow">Easy Ruler</p><h1>Calibrate once. Measure with confidence.</h1><p class="lead">Measure small objects on screen with an edge ruler, caliper, area, diameter and true-size transfer.</p><p class="status">Preparing for closed testing on Google Play.</p></div></div>
+      <article class="card"><ul><li>Calibration with a standard card or known length</li><li>Ruler on any screen edge</li><li>Two-point caliper with lock and fine adjustment</li><li>Width, height, area and diameter</li><li>Transfer measurements to physical size</li><li>Millimeters, centimeters and inches</li><li>Portrait, landscape and case offset</li><li>English, Portuguese and Spanish</li></ul><p>Accuracy depends on calibration, the screen and object placement. Easy Ruler is intended for quick measurements of small objects and does not replace a certified instrument when technical, commercial or safety accuracy is required.</p></article>
+      <a class="button" href="privacy-en.html">Privacy policy</a>
+    </section>
+    <section data-lang="es" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Regla Fácil"><div><p class="eyebrow">Regla Fácil</p><h1>Calibra una vez. Mide con confianza.</h1><p class="lead">Mide objetos pequeños en la pantalla con regla de borde, calibre, área, diámetro y transferencia a tamaño real.</p><p class="status">En preparación para pruebas cerradas en Google Play.</p></div></div>
+      <article class="card"><ul><li>Calibración con tarjeta estándar o longitud conocida</li><li>Regla en cualquier borde de la pantalla</li><li>Calibre de dos puntos con bloqueo y ajuste fino</li><li>Ancho, alto, área y diámetro</li><li>Transferencia de medidas a tamaño físico</li><li>Milímetros, centímetros y pulgadas</li><li>Uso vertical, horizontal y compensación para fundas</li><li>Español, portugués e inglés</li></ul><p>La precisión depende de la calibración, la pantalla y la colocación del objeto. Regla Fácil está destinada a mediciones rápidas de objetos pequeños y no sustituye un instrumento certificado cuando se requiere precisión técnica, comercial o de seguridad.</p></article>
+      <a class="button" href="privacy-es.html">Política de privacidad</a>
+    </section>
+    <script>const language=new URLSearchParams(location.search).get('lang');const code=['pt','en','es'].includes(language)?language:'pt';document.querySelectorAll('[data-lang]').forEach(s=>s.hidden=s.dataset.lang!==code);document.documentElement.lang=code==='pt'?'pt-BR':code;document.title=({pt:'Régua Fácil',en:'Easy Ruler',es:'Regla Fácil'})[code]+' | CEWIA Tech';document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')==='?lang='+code)a.setAttribute('aria-current','page')});</script>
+  </main>
+  <footer>CEWIA Tech · <a href="mailto:cewia.tech@gmail.com">cewia.tech@gmail.com</a></footer>
+</body>
+</html>
