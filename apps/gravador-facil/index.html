@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Grave com a tela apagada, marque momentos importantes e organize suas gravações localmente.">
+  <title>Gravador Fácil | CEWIA Tech</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header><img src="assets/cewia-symbol.png" alt=""><a href="https://cewia.com.br/">CEWIA Tech</a></header>
+  <main>
+    <nav aria-label="Language"><a href="?lang=pt" lang="pt-BR">Português</a><a href="?lang=en" lang="en">English</a><a href="?lang=es" lang="es">Español</a></nav>
+    <section data-lang="pt">
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Gravador Fácil"><div><p class="eyebrow">Gravador Fácil</p><h1>Grave com a tela apagada. Encontre o que importa.</h1><p class="lead">Registre reuniões, aulas, entrevistas e notas de voz com marcadores categorizados e organização totalmente local.</p><p class="status">Pronto para teste fechado no Google Play.</p></div></div>
+      <article class="card"><ul><li>Gravação AAC/M4A em segundo plano com a tela apagada</li><li>Qualidade de 32, 64 ou 128 kbps</li><li>Controles persistentes para pausar, continuar ou parar</li><li>Marcadores Importante, Decisão, Tarefa e Dúvida</li><li>Reprodução de 0,5× a 2× e salto para marcadores</li><li>Busca, favoritos, renomeação, compartilhamento e lixeira</li><li>Resumo textual exportável</li><li>Português, inglês e espanhol</li><li>Sem anúncios, conta, assinatura ou internet</li></ul><p>Os áudios e as anotações permanecem no aparelho. Esta versão não grava chamadas telefônicas nem faz transcrição automática. Respeite as leis locais e obtenha consentimento antes de gravar conversas.</p></article>
+      <a class="button" href="privacy-pt.html">Política de privacidade</a>
+    </section>
+    <section data-lang="en" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Easy Recorder"><div><p class="eyebrow">Easy Recorder</p><h1>Record with the screen off. Find what matters.</h1><p class="lead">Capture meetings, classes, interviews and voice notes with categorized markers and fully local organization.</p><p class="status">Ready for closed testing on Google Play.</p></div></div>
+      <article class="card"><ul><li>Background AAC/M4A recording with the screen off</li><li>32, 64 or 128 kbps quality</li><li>Persistent controls to pause, resume or stop</li><li>Important, Decision, Task and Question markers</li><li>0.5× to 2× playback and jumps to markers</li><li>Search, favorites, renaming, sharing and trash</li><li>Exportable text summary</li><li>English, Portuguese and Spanish</li><li>No ads, account, subscription or internet</li></ul><p>Audio and notes stay on the device. This version does not record phone calls or provide automatic transcription. Follow local laws and obtain consent before recording conversations.</p></article>
+      <a class="button" href="privacy-en.html">Privacy policy</a>
+    </section>
+    <section data-lang="es" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Grabadora Fácil"><div><p class="eyebrow">Grabadora Fácil</p><h1>Graba con la pantalla apagada. Encuentra lo importante.</h1><p class="lead">Registra reuniones, clases, entrevistas y notas de voz con marcadores por categoría y organización totalmente local.</p><p class="status">Lista para pruebas cerradas en Google Play.</p></div></div>
+      <article class="card"><ul><li>Grabación AAC/M4A en segundo plano con la pantalla apagada</li><li>Calidad de 32, 64 o 128 kbps</li><li>Controles persistentes para pausar, continuar o detener</li><li>Marcadores Importante, Decisión, Tarea y Duda</li><li>Reproducción de 0,5× a 2× y salto a marcadores</li><li>Búsqueda, favoritos, cambio de nombre, uso compartido y papelera</li><li>Resumen de texto exportable</li><li>Español, portugués e inglés</li><li>Sin anuncios, cuenta, suscripción ni internet</li></ul><p>Los audios y las notas permanecen en el dispositivo. Esta versión no graba llamadas telefónicas ni realiza transcripción automática. Respeta las leyes locales y obtén consentimiento antes de grabar conversaciones.</p></article>
+      <a class="button" href="privacy-es.html">Política de privacidad</a>
+    </section>
+    <script>const language=new URLSearchParams(location.search).get('lang');const code=['pt','en','es'].includes(language)?language:'pt';document.querySelectorAll('[data-lang]').forEach(s=>s.hidden=s.dataset.lang!==code);document.documentElement.lang=code==='pt'?'pt-BR':code;document.title=({pt:'Gravador Fácil',en:'Easy Recorder',es:'Grabadora Fácil'})[code]+' | CEWIA Tech';document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')==='?lang='+code)a.setAttribute('aria-current','page')});</script>
+  </main>
+  <footer>CEWIA Tech · <a href="mailto:cewia.tech@gmail.com">cewia.tech@gmail.com</a></footer>
+</body>
+</html>
