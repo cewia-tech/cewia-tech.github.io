@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Organize horários de medicamentos e receba lembretes locais, discretos e sem anúncios.">
+  <title>Remédio na Hora | CEWIA Tech</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header><img src="assets/cewia-symbol.png" alt=""><a href="https://cewia.com.br/">CEWIA Tech</a></header>
+  <main>
+    <nav aria-label="Language"><a href="?lang=pt" lang="pt-BR">Português</a><a href="?lang=en" lang="en">English</a><a href="?lang=es" lang="es">Español</a></nav>
+    <section data-lang="pt">
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Remédio na Hora"><div><p class="eyebrow">Remédio na Hora</p><h1>Seus remédios, no horário certo.</h1><p class="lead">Organize horários e dias, receba lembretes locais e acompanhe cada dose com privacidade e clareza.</p><p class="status">Pronto para teste fechado no Google Play.</p></div></div>
+      <article class="card"><ul><li>Lembretes locais mesmo com o aplicativo fechado</li><li>Ações Tomei, Adiar e Dispensar na notificação</li><li>Status diário de doses programadas e confirmadas</li><li>Repetição diária, semanal, por intervalo, dia do mês ou data única</li><li>Modo padrão, somente vibrar ou silencioso</li><li>Intervalos de atualização configuráveis</li><li>Temas claro, escuro e automático</li><li>Português, inglês e espanhol</li><li>Sem anúncios, conta, assinatura ou internet</li></ul><p>Os dados permanecem no aparelho. O aplicativo ajuda a organizar lembretes, mas não é um dispositivo médico, não fornece orientação médica e não substitui a recomendação de profissionais de saúde.</p></article>
+      <a class="button" href="privacy-pt.html">Política de privacidade</a>
+    </section>
+    <section data-lang="en" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Medicine on Time"><div><p class="eyebrow">Medicine on Time</p><h1>Your medicines, at the right time.</h1><p class="lead">Organize times and days, receive local reminders, and follow each dose with privacy and clarity.</p><p class="status">Ready for closed testing on Google Play.</p></div></div>
+      <article class="card"><ul><li>Local reminders even when the app is closed</li><li>Taken, Snooze and Dismiss notification actions</li><li>Daily status for scheduled and confirmed doses</li><li>Daily, weekly, interval, monthly-day or one-time recurrence</li><li>Standard, vibrate-only or silent mode</li><li>Configurable reminder update intervals</li><li>Light, dark and automatic themes</li><li>English, Portuguese and Spanish</li><li>No ads, account, subscription or internet</li></ul><p>Data stays on the device. The app helps organize reminders, but it is not a medical device, does not provide medical advice, and does not replace guidance from healthcare professionals.</p></article>
+      <a class="button" href="privacy-en.html">Privacy policy</a>
+    </section>
+    <section data-lang="es" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Remedio a Tiempo"><div><p class="eyebrow">Remedio a Tiempo</p><h1>Tus medicamentos, a la hora correcta.</h1><p class="lead">Organiza horarios y días, recibe recordatorios locales y controla cada dosis con privacidad y claridad.</p><p class="status">Lista para pruebas cerradas en Google Play.</p></div></div>
+      <article class="card"><ul><li>Recordatorios locales incluso con la aplicación cerrada</li><li>Acciones Tomado, Aplazar y Descartar en la notificación</li><li>Estado diario de dosis programadas y confirmadas</li><li>Repetición diaria, semanal, por intervalo, día del mes o fecha única</li><li>Modo estándar, solo vibración o silencioso</li><li>Intervalos de actualización configurables</li><li>Temas claro, oscuro y automático</li><li>Español, portugués e inglés</li><li>Sin anuncios, cuenta, suscripción ni internet</li></ul><p>Los datos permanecen en el dispositivo. La aplicación ayuda a organizar recordatorios, pero no es un dispositivo médico, no ofrece asesoramiento médico ni sustituye las indicaciones de profesionales de la salud.</p></article>
+      <a class="button" href="privacy-es.html">Política de privacidad</a>
+    </section>
+    <script>const language=new URLSearchParams(location.search).get('lang');const code=['pt','en','es'].includes(language)?language:'pt';document.querySelectorAll('[data-lang]').forEach(s=>s.hidden=s.dataset.lang!==code);document.documentElement.lang=code==='pt'?'pt-BR':code;document.title=({pt:'Remédio na Hora',en:'Medicine on Time',es:'Remedio a Tiempo'})[code]+' | CEWIA Tech';document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')==='?lang='+code)a.setAttribute('aria-current','page')});</script>
+  </main>
+  <footer>CEWIA Tech · <a href="mailto:cewia.tech@gmail.com">cewia.tech@gmail.com</a></footer>
+</body>
+</html>
