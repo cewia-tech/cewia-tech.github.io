@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Organize tarefas, compromissos e hábitos com lembretes locais, privados e sem anúncios.">
+  <title>Lembrete na Hora | CEWIA Tech</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header><img src="assets/cewia-symbol.png" alt=""><a href="https://cewia.com.br/">CEWIA Tech</a></header>
+  <main>
+    <nav aria-label="Language"><a href="?lang=pt" lang="pt-BR">Português</a><a href="?lang=en" lang="en">English</a><a href="?lang=es" lang="es">Español</a></nav>
+    <section data-lang="pt">
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Lembrete na Hora"><div><p class="eyebrow">Lembrete na Hora</p><h1>O que importa, na hora certa.</h1><p class="lead">Organize tarefas, compromissos e hábitos com lembretes locais, simples e privados.</p><p class="status">Em preparação para teste fechado no Google Play.</p></div></div>
+      <article class="card"><ul><li>Lembretes locais mesmo com o aplicativo fechado</li><li>Ações Concluir, Adiar e Ignorar na notificação</li><li>Status diário de lembretes programados e concluídos</li><li>Repetição diária, semanal, por intervalo, dia do mês ou data única</li><li>Modo padrão, somente vibrar ou silencioso</li><li>Intervalos de atualização configuráveis</li><li>Temas claro, escuro e automático</li><li>Português, inglês e espanhol</li><li>Sem anúncios, conta, assinatura ou internet</li></ul><p>Todos os dados permanecem no aparelho e são processados localmente.</p></article>
+      <a class="button" href="privacy-pt.html">Política de privacidade</a>
+    </section>
+    <section data-lang="en" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Reminder on Time"><div><p class="eyebrow">Reminder on Time</p><h1>What matters, right on time.</h1><p class="lead">Organize tasks, appointments, and habits with simple, private, local reminders.</p><p class="status">Being prepared for closed testing on Google Play.</p></div></div>
+      <article class="card"><ul><li>Local reminders even when the app is closed</li><li>Complete, Snooze and Ignore notification actions</li><li>Daily status for scheduled and completed reminders</li><li>Daily, weekly, interval, monthly-day or one-time recurrence</li><li>Standard, vibrate-only or silent mode</li><li>Configurable reminder update intervals</li><li>Light, dark and automatic themes</li><li>English, Portuguese and Spanish</li><li>No ads, account, subscription or internet</li></ul><p>All data stays on the device and is processed locally.</p></article>
+      <a class="button" href="privacy-en.html">Privacy policy</a>
+    </section>
+    <section data-lang="es" hidden>
+      <div class="hero"><img class="app-icon" src="assets/icon.png" alt="Recordatorio a Tiempo"><div><p class="eyebrow">Recordatorio a Tiempo</p><h1>Lo importante, a la hora correcta.</h1><p class="lead">Organiza tareas, citas y hábitos con recordatorios locales, simples y privados.</p><p class="status">En preparación para pruebas cerradas en Google Play.</p></div></div>
+      <article class="card"><ul><li>Recordatorios locales incluso con la aplicación cerrada</li><li>Acciones Completar, Aplazar e Ignorar en la notificación</li><li>Estado diario de recordatorios programados y completados</li><li>Repetición diaria, semanal, por intervalo, día del mes o fecha única</li><li>Modo estándar, solo vibración o silencioso</li><li>Intervalos de actualización configurables</li><li>Temas claro, oscuro y automático</li><li>Español, portugués e inglés</li><li>Sin anuncios, cuenta, suscripción ni internet</li></ul><p>Todos los datos permanecen en el dispositivo y se procesan localmente.</p></article>
+      <a class="button" href="privacy-es.html">Política de privacidad</a>
+    </section>
+    <script>const language=new URLSearchParams(location.search).get('lang');const code=['pt','en','es'].includes(language)?language:'pt';document.querySelectorAll('[data-lang]').forEach(s=>s.hidden=s.dataset.lang!==code);document.documentElement.lang=code==='pt'?'pt-BR':code;document.title=({pt:'Lembrete na Hora',en:'Reminder on Time',es:'Recordatorio a Tiempo'})[code]+' | CEWIA Tech';document.querySelectorAll('nav a').forEach(a=>{if(a.getAttribute('href')==='?lang='+code)a.setAttribute('aria-current','page')});</script>
+  </main>
+  <footer>CEWIA Tech · <a href="mailto:cewia.tech@gmail.com">cewia.tech@gmail.com</a></footer>
+</body>
+</html>
